@@ -35,22 +35,28 @@ layout: home # Menggunakan layout yang sesuai
 
     <!-- Vendor CSS Files -->
     <link
-      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="{{ site.baseulr }}/assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="{{ site.baseulr }}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="/assets/vendor/glightbox/css/glightbox.min.css"
+      href="{{ site.baseulr }}/assets/vendor/aos/aos.css"
       rel="stylesheet"
     />
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="{{ site.baseulr }}/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ site.baseulr }}/assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Main CSS File -->
-    <link href="/assets/css/main.css" rel="stylesheet" />
+    <link href="{{ site.baseulr }}/assets/css/main.css" rel="stylesheet" />
   </head>
   <body class="index-page">
     <header
@@ -62,7 +68,10 @@ layout: home # Menggunakan layout yang sesuai
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
         <a href="/" class="logo d-flex align-items-center me-auto">
-          <img src="/assets/logo-himpunan.png" alt="Logo HMTI" />
+          <img
+            src="{{ site.baseulr }}/assets/logo-himpunan.png"
+            alt="Logo HMTI"
+          />
           <h1 class="sitename">HMTI</h1>
         </a>
 
@@ -96,15 +105,6 @@ layout: home # Menggunakan layout yang sesuai
                 <a href="{{ post.url }}" class="read-more">Baca Selengkapnya</a>
               </div>
             </div>
-
-            <div class="col-md-6">
-              <div class="news-card">
-                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                <p>Tanggal: {{ post.date | date: "%d %B %Y" }}</p>
-                <p>{{ post.excerpt }}</p>
-                <a href="{{ post.url }}" class="read-more">Baca Selengkapnya</a>
-              </div>
-            </div>
             {% endfor %}
           </div>
         </div>
@@ -122,18 +122,18 @@ layout: home # Menggunakan layout yang sesuai
     </a>
 
     <!-- Vendor JS Files -->
-    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/vendor/php-email-form/validate.js"></script>
-    <script src="/assets/vendor/aos/aos.js"></script>
-    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="/assets/vendor/typeitjs/typeitjs.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/php-email-form/validate.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/aos/aos.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="{{ site.baseulr }}/assets/vendor/typeitjs/typeitjs.js"></script>
 
     <!-- Main JS File -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/bengkel-it.js"></script>
+    <script src="{{ site.baseulr }}/assets/js/main.js"></script>
+    <script src="{{ site.baseulr }}/assets/js/bengkel-it.js"></script>
   </body>
 </html>
