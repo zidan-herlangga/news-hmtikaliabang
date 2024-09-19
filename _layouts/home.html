@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home # Menggunakan layout yang sesuai
 ---
 
 <!DOCTYPE html>
@@ -14,24 +14,16 @@ layout: post
     <title>HMTI News</title>
     <meta
       name="description"
-      content="Himpunan Mahasiswa Teknologi Informasi (HMTI) adalah wadah
-                aspirasi dan pelayanan bagi mahasiswa Jurusan Teknologi
-                Informasi."
+      content="Himpunan Mahasiswa Teknologi Informasi (HMTI) adalah wadah aspirasi dan pelayanan bagi mahasiswa Jurusan Teknologi Informasi."
     />
     <meta
       name="keywords"
-      content="HMTI DPC Kaliabang, HMTI Kaliabang, DPC Kaliabang, News HMTI DPC Kaliabang, News HMTI Kaliabang"
+      content="HMTI DPC Kaliabang, HMTI Kaliabang, DPC Kaliabang, News HMTI DPC Kaliabang"
     />
 
     <!-- Favicons -->
-    <link
-      href="https://hmtikaliabang.vercel.app/assets/logo-himpunan.png"
-      rel="icon"
-    />
-    <link
-      href="https://hmtikaliabang.vercel.app/assets/logo-himpunan.png"
-      rel="apple-touch-icon"
-    />
+    <link href="/assets/logo-himpunan.png" rel="icon" />
+    <link href="/assets/logo-himpunan.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -64,37 +56,25 @@ layout: post
     <header
       id="header"
       class="header d-flex align-items-center fixed-top"
-      style="background-color: rgb(40 58 90)"
+      style="background-color: rgb(40, 58, 90)"
     >
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
         <a href="/" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="/assets/logo-himpunan.png" alt="Logo HMTI" />
           <h1 class="sitename">HMTI</h1>
-          <br />
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="https://hmtikaliabang.vercel.app/">Beranda</a></li>
-            <li>
-              <a href="https://hmtikaliabang.vercel.app/#about">Tentang</a>
-            </li>
-            <li>
-              <a href="https://hmtikaliabang.vercel.app/404.html">Portfolio</a>
-            </li>
-            <li>
-              <a href="https://hmtikaliabang.vercel.app/#divisi">Divisi</a>
-            </li>
-            <li>
-              <a href="https://hmtikaliabang.vercel.app/#team">Tim Kami</a>
-            </li>
-            <li>
-              <a href="https://hmtikaliabang.vercel.app/#contact">Bengkel IT</a>
-            </li>
-            <li><a href="/">Berita</a></li>
+            <li><a href="/">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="/404.html">Portfolio</a></li>
+            <li><a href="#divisi">Divisi</a></li>
+            <li><a href="#team">Tim Kami</a></li>
+            <li><a href="#contact">Bengkel IT</a></li>
+            <li><a href="/news">Berita</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -103,11 +83,20 @@ layout: post
 
     <main class="main">
       <!-- News Section -->
-      <section class="news-section">
+      <section class="content-article">
         <div class="container">
           <h3>Latest News</h3>
           <div class="row">
             {% for post in site.posts %}
+            <div class="col-md-6">
+              <div class="news-card">
+                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <p>Tanggal: {{ post.date | date: "%d %B %Y" }}</p>
+                <p>{{ post.excerpt }}</p>
+                <a href="{{ post.url }}" class="read-more">Baca Selengkapnya</a>
+              </div>
+            </div>
+
             <div class="col-md-6">
               <div class="news-card">
                 <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
@@ -128,8 +117,9 @@ layout: post
       href="#"
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
     <!-- Vendor JS Files -->
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
