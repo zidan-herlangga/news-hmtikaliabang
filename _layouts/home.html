@@ -84,7 +84,7 @@ layout: home # Menggunakan layout yang sesuai
             src="{{ site.baseulr }}/assets/logo-himpunan.png"
             alt="Logo HMTI"
           />
-          <h1 class="sitename">HMTI</h1>
+          <h1 class="sitename">HMTI News</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -115,22 +115,59 @@ layout: home # Menggunakan layout yang sesuai
       <section class="content-article">
         <div class="container">
           <h3>Latest News</h3>
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <div class="d-flex justify-content-end">
+                <input
+                  type="text"
+                  id="search-input"
+                  class="form-control"
+                  placeholder="Cari berita..."
+                  aria-label="Search news"
+                />
+              </div>
+            </div>
+          </div>
           <div class="row">
             {% for post in site.posts %}
-            <div class="col-md-6">
-              <div class="news-card">
+            <div class="col-md-6 mb-4">
+              <!-- Mengubah ukuran kolom untuk responsivitas -->
+              <div class="news-card" data-title="{{ post.title | downcase }}">
+                {% if post.image %}
+                <img
+                  src="{{ post.image }}"
+                  alt="{{ post.title }}"
+                  class="post-image mb-4"
+                />
+                {% endif %}
                 <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                <p>Tanggal: {{ post.date | date: "%d %B %Y" }}</p>
+                <p class="text-muted">
+                  Tanggal: {{ post.date | date: "%d %B %Y" }}
+                </p>
                 <p>{{ post.excerpt }}</p>
-                <a href="{{ post.url }}" class="read-more">Baca Selengkapnya</a>
+                <a href="{{ post.url }}">Baca Selengkapnya</a>
               </div>
             </div>
             {% endfor %}
           </div>
         </div>
       </section>
+
       <!-- /News Section -->
     </main>
+
+    <!-- Banner Popup -->
+    <div id="popup-banner" class="popup-banner">
+      <div class="popup-content">
+        <h2>Selamat Datang di HMTI News!</h2>
+        <p>Jangan lewatkan berita terbaru dan informasi penting.</p>
+        <button id="close-popup">Tutup</button>
+      </div>
+    </div>
+
+    <div id="notification-button" class="notification-button">
+      <button id="reminder-button"><i class="bi-bell"></i></button>
+    </div>
 
     <!-- Scroll Top -->
     <a
@@ -143,18 +180,56 @@ layout: home # Menggunakan layout yang sesuai
 
     <!-- Vendor JS Files -->
     <script src="{{ site.baseulr }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="{{ site.baseulr }}/assets/vendor/php-email-form/validate.js"></script>
-    <script src="{{ site.baseulr }}/assets/vendor/aos/aos.js"></script>
-    <script src="{{ site.baseulr }}/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="{{ site.baseulr }}/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="{{ site.baseulr }}/assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="{{ site.baseulr }}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="{{ site.baseulr }}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="{{ site.baseulr }}/assets/vendor/typeitjs/typeitjs.js"></script> -->
 
     <!-- Main JS File -->
     <script src="{{ site.baseulr }}/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="{{ site.baseulr }}/assets/js/bengkel-it.js"></script> -->
+    <script>
+      // Pencarian Jika Cocok
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const newsCards = document.querySelectorAll(".news-card");
+
+        searchInput.addEventListener("input", function () {
+          const query = searchInput.value.toLowerCase();
+
+          newsCards.forEach((card) => {
+            const title = card.getAttribute("data-title");
+            if (title.includes(query)) {
+              card.style.display = "block"; // Tampilkan jika cocok
+            } else {
+              card.style.display = "none"; // Sembunyikan jika tidak cocok
+            }
+          });
+        });
+      });
+
+      // Banner Popup
+      document.addEventListener("DOMContentLoaded", function () {
+        const popupBanner = document.getElementById("popup-banner");
+        const closePopup = document.getElementById("close-popup");
+
+        // Tampilkan banner saat halaman dibuka
+        popupBanner.style.display = "flex";
+
+        // Tutup banner saat tombol ditekan
+        closePopup.addEventListener("click", function () {
+          popupBanner.style.display = "none";
+        });
+      });
+
+      // Pengingat Berita
+      document.addEventListener("DOMContentLoaded", function () {
+        const reminderButton = document.getElementById("reminder-button");
+
+        reminderButton.addEventListener("click", function () {
+          alert(
+            "Anda telah mendaftar untuk mendapatkan pengingat berita terbaru!"
+          );
+          // Logika untuk mengingatkan pengguna bisa ditambahkan di sini, seperti penyimpanan di localStorage
+          localStorage.setItem("newsReminder", "true");
+        });
+      });
+    </script>
   </body>
 </html>
