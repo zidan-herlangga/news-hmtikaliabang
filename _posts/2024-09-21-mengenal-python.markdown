@@ -2,7 +2,7 @@
 layout: post
 title: "Mengenal Python: Bahasa Pemrograman yang Populer"
 permalink: "/post/mengenal-python/"
-date: 2024-09-21 00:02:01 +0700
+date: 2024-09-21
 categories: python programming
 image: https://fastnetmon.com/wp-content/uploads/2016/08/python-logo.png
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Mengenal Jekyll: Generator Situs Statis"
 permalink: "/post/mengenal-jekyll/"
-date: 2024-09-21 00:02:01 +0700
+date: 2024-09-20 00:02:01 +0700
 categories: jekyll update
 image: https://happycoding.io/tutorials/html/images/jekyll-6.png
 ---
