@@ -9,6 +9,8 @@ image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDo
 
 Generator situs statis membuat situs HTML, dengan tata letak halaman yang dapat diprediksi dan konten dengan presentasi reguler seperti blog. Ada banyak kerangka kerja yang dapat memanfaatkan bahasa pemrograman dan memungkinkan Anda menggunakan kembali kode dan memproses aset untuk halaman HTML ini, tetapi artikel ini akan membandingkan dua yang paling populer: Hugo dan Jekyll . (Untuk perbandingan situs statis dan situs dinamis, lihat Jekyll vs Wordpress )
 
+![Hugo vs Jekyll](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&s)
+
 ## Mengapa Menggunakan Halaman HTML Statis?
 Generator situs statis menarik karena menghasilkan situs aman yang memerlukan sedikit perawatan dan lebih cepat disajikan daripada halaman web yang dibuat secara dinamis. Dengan halaman web dinamis, kerangka kerja web yang terpasang di server menghasilkan halaman yang dilihat pengguna. Pengguna membuat permintaan, server meminta informasi dari basis data, menarik informasi yang ingin dilihat pengguna, menggabungkan data tersebut ke dalam halaman HTML, lalu mengirimkan halaman tersebut kepada pengguna.
 
