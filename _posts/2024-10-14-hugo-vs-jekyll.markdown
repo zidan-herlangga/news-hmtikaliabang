@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?"
+comments: true
 permalink: "/post/hugo-vs-jekyll/"
 date: 2024-10-14 00:02:01 +0700
 categories: 
