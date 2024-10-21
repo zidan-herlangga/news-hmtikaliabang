@@ -4,13 +4,12 @@ title: "Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?"
 comments: true
 permalink: "/post/hugo-vs-jekyll/"
 date: 2024-10-14 00:02:01 +0700
-categories: 
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&s
 ---
 
 Generator situs statis membuat situs HTML, dengan tata letak halaman yang dapat diprediksi dan konten dengan presentasi reguler seperti blog. Ada banyak kerangka kerja yang dapat memanfaatkan bahasa pemrograman dan memungkinkan Anda menggunakan kembali kode dan memproses aset untuk halaman HTML ini, tetapi artikel ini akan membandingkan dua yang paling populer: Hugo dan Jekyll . (Untuk perbandingan situs statis dan situs dinamis, lihat Jekyll vs Wordpress )
 
-![Hugo vs Jekyll](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&s)
+![Hugo vs Jekyll](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&s){: width="400" }
 
 ## Mengapa Menggunakan Halaman HTML Statis?
 Generator situs statis menarik karena menghasilkan situs aman yang memerlukan sedikit perawatan dan lebih cepat disajikan daripada halaman web yang dibuat secara dinamis. Dengan halaman web dinamis, kerangka kerja web yang terpasang di server menghasilkan halaman yang dilihat pengguna. Pengguna membuat permintaan, server meminta informasi dari basis data, menarik informasi yang ingin dilihat pengguna, menggabungkan data tersebut ke dalam halaman HTML, lalu mengirimkan halaman tersebut kepada pengguna.
@@ -28,10 +27,10 @@ Salah satu generator situs statis pertama yang memulai kembali tren ini dalam pe
 
 ## Apa itu Hugo?
 Hugo adalah generator situs statis yang sangat cepat dan sangat aman yang memposisikan diri sebagai alat pembuat situs web yang menyenangkan dan modern. Alat ini ditulis dalam bahasa Go dan situs dapat dihosting di mana saja. Salah satu fitur yang paling menonjol adalah situs statis Hugo tidak memerlukan basis data pada runtime seperti Ruby, PHP, atau Python. Menurut situs web mereka, generator situs statis Hugo “adalah alat tercepat di jenisnya” yang mencantumkan kecepatan pembuatan situs rata-rata di bawah satu detik. 
-Informasi selengkapnya tentang ![Apa itu Hugo](https://gohugo.io/about/what-is-hugo/)
+Informasi selengkapnya tentang [Apa itu Hugo](https://gohugo.io/about/what-is-hugo/)
 
 ## Apa itu Jekyll?
-Jekyll adalah generator situs statis sumber terbuka yang ditulis dalam bahasa Ruby oleh salah satu pendiri Github, Tom Preston-Werner. Jekyll menerjemahkan dokumen teks biasa menjadi situs statis yang dapat digunakan untuk situs web atau blog berbasis informasi. Jekyll memiliki dukungan bawaan untuk halaman Github dan merupakan salah satu generator situs statis paling populer yang tersedia.
+Jekyll adalah generator situs statis sumber terbuka yang ditulis dalam bahasa Ruby oleh salah satu pendiri Github, Tom Preston-Werner. Jekyll menerjemahkan dokumen teks biasa menjadi situs statis yang dapat digunakan untuk situs web atau blog berbasis informasi. Jekyll memiliki dukungan bawaan untuk halaman Github dan merupakan salah satu generator situs statis paling populer yang tersedia. Informasi selengkapnya tentang [Apa itu Jekyll](https://jekyllrb.com/docs/)
 
 ## Hugo vs. Jekyll
 Dengan generator mana pun, Anda dapat membuat blog bertemplat dan menjalankannya dalam waktu kurang dari tiga puluh menit. Jika Anda memulai dari nol, Hugo sedikit lebih mudah diinstal. Dengan Jekyll, Anda harus menginstal beberapa prasyarat seperti Ruby. Go hadir sebagai biner prakompilasi yang dibundel bersama instalasi Hugo.
