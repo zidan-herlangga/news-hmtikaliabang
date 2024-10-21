@@ -1,7 +1,3 @@
----
-layout: post # Ganti layout sesuai dengan yang kamu gunakan
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,8 +7,8 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
     />
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}" />
+    <title>Mengenal Jekyll: Generator Situs Statis</title>
+    <meta name="description" content="" />
     <meta
       name="keywords"
       content="HMTI DPC Kaliabang, HMTI Kaliabang, DPC Kaliabang, News HMTI DPC Kaliabang"
@@ -46,16 +42,16 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <link
-      href="{{ site.baseurl }}/assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="{{ site.baseurl }}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
 
     <!-- Main CSS File -->
-    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
+    <link href="/assets/css/main.css" rel="stylesheet" />
     <style>
       /*--------------------------------------------------------------
       # Global Footer
@@ -248,7 +244,7 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
           class="logo d-flex align-items-center me-auto"
         >
           <img
-            src="{{ site.baseurl }}/assets/logo-himpunan.png"
+            src="/assets/logo-himpunan.png"
             alt="Logo HMTI"
           />
           <h1 class="sitename">HMTI News</h1>
@@ -282,11 +278,78 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
       <!-- News Section -->
       <section class="content-article">
         <div class="container">
-          <h3>{{ page.title }}</h3>
+          <h3>Mengenal Jekyll: Generator Situs Statis</h3>
           <div class="row">
             <!-- Konten Berita di Kiri -->
             <div class="col-md-8">
-              <div class="content-news">{{ content | markdownify }}</div>
+              <div class="content-news"><p>Jekyll adalah generator situs statis yang memungkinkan Anda untuk mengubah teks biasa menjadi situs web yang sepenuhnya berfungsi. Jekyll sangat populer di kalangan pengembang web dan penulis blog karena kemudahan penggunaannya dan fleksibilitasnya. Mari kita bahas lebih dalam tentang Jekyll.</p>
+
+<h2 id="apa-itu-jekyll">Apa Itu Jekyll?</h2>
+
+<p>Jekyll adalah alat yang digunakan untuk membangun situs web statis dengan cara yang sederhana dan efisien. Situs yang dihasilkan bersifat statis, artinya konten tidak berubah secara dinamis saat diakses oleh pengguna.</p>
+
+<h3 id="1-keunggulan-jekyll">1. <strong>Keunggulan Jekyll</strong></h3>
+
+<ul>
+  <li><strong>Situs Statis</strong>: Jekyll menghasilkan situs yang cepat dan aman, karena tidak bergantung pada database.</li>
+  <li><strong>Menulis dengan Markdown</strong>: Anda dapat menulis konten menggunakan Markdown, format teks yang mudah dibaca dan ditulis.</li>
+  <li><strong>Penggunaan Liquid</strong>: Jekyll menggunakan Liquid, bahasa templating yang memungkinkan Anda menambahkan logika ke dalam halaman, seperti loop dan kondisi.</li>
+</ul>
+
+<h3 id="2-kemudahan-penggunaan">2. <strong>Kemudahan Penggunaan</strong></h3>
+
+<ul>
+  <li><strong>Pengaturan Minimal</strong>: Jekyll memungkinkan Anda untuk membuat dan mengelola situs tanpa memerlukan server backend yang rumit. Cukup tulis konten Anda dan jalankan perintah untuk membangun situs.</li>
+</ul>
+
+<h3 id="3-integrasi-dengan-github-pages">3. <strong>Integrasi dengan GitHub Pages</strong></h3>
+
+<ul>
+  <li><strong>Hosting Gratis</strong>: Jekyll terintegrasi dengan GitHub Pages, yang memungkinkan Anda menghosting situs secara gratis dengan hanya mendorong repositori ke GitHub.</li>
+</ul>
+
+<h3 id="4-tema-dan-kustomisasi">4. <strong>Tema dan Kustomisasi</strong></h3>
+
+<ul>
+  <li><strong>Beragam Tema</strong>: Jekyll menawarkan banyak tema yang dapat dipilih dan disesuaikan. Anda juga dapat membuat tema kustom sesuai dengan identitas merek Anda.</li>
+</ul>
+
+<h3 id="5-dukungan-untuk-blog">5. <strong>Dukungan untuk Blog</strong></h3>
+
+<ul>
+  <li><strong>Fitur Blog yang Kuat</strong>: Jekyll dirancang dengan blog dalam pikiran, menawarkan fitur seperti pengelolaan pos, kategori, dan tag.</li>
+</ul>
+
+<h3 id="6-ekstensi-dan-plugin">6. <strong>Ekstensi dan Plugin</strong></h3>
+
+<ul>
+  <li><strong>Fungsionalitas Tambahan</strong>: Jekyll mendukung berbagai plugin yang dapat memperluas fungsionalitas situs Anda, meskipun beberapa mungkin tidak didukung di GitHub Pages.</li>
+</ul>
+
+<h2 id="contoh-gambar">Contoh Gambar</h2>
+
+<p>Berikut adalah gambar yang berkaitan dengan Jekyll:</p>
+
+<p><img src="https://happycoding.io/tutorials/html/images/jekyll-6.png" alt="Jekyll Logo" width="400" /></p>
+
+<h2 id="contoh-kode-snippet">Contoh Kode Snippet</h2>
+
+<p>Jekyll juga menawarkan dukungan untuk kode snippet. Berikut adalah contoh kode Ruby:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Jekyll adalah alat yang kuat untuk membuat situs web statis. Dengan pendekatan yang sederhana dan efisien, Jekyll memungkinkan Anda untuk fokus pada pembuatan konten berkualitas tanpa repot dengan pengaturan backend yang rumit. Jika Anda mencari cara yang cepat dan efektif untuk membangun situs web atau blog, Jekyll adalah pilihan yang sangat baik.</p>
+
+<p>Untuk informasi lebih lanjut, Anda dapat mengunjungi <a href="https://jekyllrb.com/docs/home">Jekyll docs</a>, melaporkan masalah di <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>, atau berdiskusi di <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+</div>
             </div>
 
             <!-- Bagian Samping di Kanan -->
@@ -294,13 +357,25 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
               <aside class="aside-section">
                 <h3>Recent Posts</h3>
                 <ul class="list-unstyled">
-                  {% for post in site.posts %}
+                  
                   <li>
-                    <a href="{{ post.url }}" class="aside-link"
-                      >{{ post.title }}</a
+                    <a href="/post/hugo-vs-jekyll/" class="aside-link"
+                      >Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?</a
                     >
                   </li>
-                  {% endfor %}
+                  
+                  <li>
+                    <a href="/post/mengenal-python/" class="aside-link"
+                      >Mengenal Python: Bahasa Pemrograman yang Populer</a
+                    >
+                  </li>
+                  
+                  <li>
+                    <a href="/post/mengenal-jekyll/" class="aside-link"
+                      >Mengenal Jekyll: Generator Situs Statis</a
+                    >
+                  </li>
+                  
                 </ul>
               </aside>
             </div>
@@ -343,7 +418,7 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="d-flex align-items-center">
               <img
-                src="{{ site.baseurl }}/assets/logo-himpunan.png"
+                src="/assets/logo-himpunan.png"
                 alt="Logo HMTI"
                 height="80"
               />
@@ -406,10 +481,10 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
     </a>
 
     <!-- Vendor JS Files -->
-    <script src="{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

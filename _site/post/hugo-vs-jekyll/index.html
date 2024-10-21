@@ -1,7 +1,3 @@
----
-layout: post # Ganti layout sesuai dengan yang kamu gunakan
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,8 +7,8 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
     />
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}" />
+    <title>Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?</title>
+    <meta name="description" content="" />
     <meta
       name="keywords"
       content="HMTI DPC Kaliabang, HMTI Kaliabang, DPC Kaliabang, News HMTI DPC Kaliabang"
@@ -46,16 +42,16 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <link
-      href="{{ site.baseurl }}/assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="{{ site.baseurl }}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
 
     <!-- Main CSS File -->
-    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
+    <link href="/assets/css/main.css" rel="stylesheet" />
     <style>
       /*--------------------------------------------------------------
       # Global Footer
@@ -248,7 +244,7 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
           class="logo d-flex align-items-center me-auto"
         >
           <img
-            src="{{ site.baseurl }}/assets/logo-himpunan.png"
+            src="/assets/logo-himpunan.png"
             alt="Logo HMTI"
           />
           <h1 class="sitename">HMTI News</h1>
@@ -282,11 +278,45 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
       <!-- News Section -->
       <section class="content-article">
         <div class="container">
-          <h3>{{ page.title }}</h3>
+          <h3>Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?</h3>
           <div class="row">
             <!-- Konten Berita di Kiri -->
             <div class="col-md-8">
-              <div class="content-news">{{ content | markdownify }}</div>
+              <div class="content-news"><p>Generator situs statis membuat situs HTML, dengan tata letak halaman yang dapat diprediksi dan konten dengan presentasi reguler seperti blog. Ada banyak kerangka kerja yang dapat memanfaatkan bahasa pemrograman dan memungkinkan Anda menggunakan kembali kode dan memproses aset untuk halaman HTML ini, tetapi artikel ini akan membandingkan dua yang paling populer: Hugo dan Jekyll . (Untuk perbandingan situs statis dan situs dinamis, lihat Jekyll vs Wordpress )</p>
+
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&amp;s" alt="Hugo vs Jekyll" width="400" /></p>
+
+<h2 id="mengapa-menggunakan-halaman-html-statis">Mengapa Menggunakan Halaman HTML Statis?</h2>
+<p>Generator situs statis menarik karena menghasilkan situs aman yang memerlukan sedikit perawatan dan lebih cepat disajikan daripada halaman web yang dibuat secara dinamis. Dengan halaman web dinamis, kerangka kerja web yang terpasang di server menghasilkan halaman yang dilihat pengguna. Pengguna membuat permintaan, server meminta informasi dari basis data, menarik informasi yang ingin dilihat pengguna, menggabungkan data tersebut ke dalam halaman HTML, lalu mengirimkan halaman tersebut kepada pengguna.</p>
+
+<p>Dengan halaman HTML statis, halaman tersebut telah dirender terlebih dahulu, sehingga server tidak melakukan pekerjaan apa pun dalam membangun halaman tersebut. Server hanya menangani pengiriman halaman yang sesuai kepada pengguna. Ini berarti bahwa halaman HTML statis lebih cepat, dan persyaratan komputasi untuk server jauh lebih kecil; hal ini penting dalam lingkungan cloud tempat Anda dikenakan biaya untuk daya komputasi.</p>
+
+<p>Halaman statis memangkas pembuatan halaman, sehingga pengguna menerima halaman mereka jauh lebih cepat. Risiko keamanan juga lebih kecil karena lebih sedikit bagian yang dapat disusupi dan dieksploitasi oleh penyerang. Halaman HTML statis mudah di-cache, sehingga sangat cocok untuk disajikan dari jaringan pengiriman konten (CDN), sehingga waktu respons menjadi lebih cepat.</p>
+
+<p>Karena halaman statis tidak memerlukan server untuk melakukan kalkulasi atau memeriksa database, Anda dapat menyebarkannya menggunakan opsi hosting yang sangat sederhana dan berbiaya rendah seperti bucket Amazon S3 atau GitHub Pages.</p>
+
+<h2 id="generator-situs-statis">Generator Situs Statis</h2>
+<p>Anda cukup menulis halaman HTML dan menaruhnya di server, mengingat kembali masa -masa awal web, tetapi generator situs statis memudahkan pembuatan halaman baru yang menggunakan templat yang ada atau memodifikasi semua halaman yang ada sekaligus.</p>
+
+<p>Salah satu generator situs statis pertama yang memulai kembali tren ini dalam pengembangan web adalah Jekyll. Hugo bergabung lima tahun kemudian.</p>
+
+<h2 id="apa-itu-hugo">Apa itu Hugo?</h2>
+<p>Hugo adalah generator situs statis yang sangat cepat dan sangat aman yang memposisikan diri sebagai alat pembuat situs web yang menyenangkan dan modern. Alat ini ditulis dalam bahasa Go dan situs dapat dihosting di mana saja. Salah satu fitur yang paling menonjol adalah situs statis Hugo tidak memerlukan basis data pada runtime seperti Ruby, PHP, atau Python. Menurut situs web mereka, generator situs statis Hugo “adalah alat tercepat di jenisnya” yang mencantumkan kecepatan pembuatan situs rata-rata di bawah satu detik. 
+Informasi selengkapnya tentang <a href="https://gohugo.io/about/what-is-hugo/">Apa itu Hugo</a></p>
+
+<h2 id="apa-itu-jekyll">Apa itu Jekyll?</h2>
+<p>Jekyll adalah generator situs statis sumber terbuka yang ditulis dalam bahasa Ruby oleh salah satu pendiri Github, Tom Preston-Werner. Jekyll menerjemahkan dokumen teks biasa menjadi situs statis yang dapat digunakan untuk situs web atau blog berbasis informasi. Jekyll memiliki dukungan bawaan untuk halaman Github dan merupakan salah satu generator situs statis paling populer yang tersedia. Informasi selengkapnya tentang <a href="https://jekyllrb.com/docs/">Apa itu Jekyll</a></p>
+
+<h2 id="hugo-vs-jekyll">Hugo vs. Jekyll</h2>
+<p>Dengan generator mana pun, Anda dapat membuat blog bertemplat dan menjalankannya dalam waktu kurang dari tiga puluh menit. Jika Anda memulai dari nol, Hugo sedikit lebih mudah diinstal. Dengan Jekyll, Anda harus menginstal beberapa prasyarat seperti Ruby. Go hadir sebagai biner prakompilasi yang dibundel bersama instalasi Hugo.</p>
+
+<p>Untuk framework Jekyll dan Hugo, Anda biasanya menulis file konten seperti posting blog dalam HTML atau Markdown. Konten ini digabungkan dengan template HTML, yang membungkus dan memberi gaya pada konten, menghasilkan file HTML untuk ditampilkan di web.</p>
+
+<p>Kedua kerangka kerja tersebut memungkinkan pengembang untuk menambahkan variabel ke konten, menggunakan bahasa markah YAML, dan menggunakan berkas data dalam format umum seperti JSON dan CSV. Kedua kerangka kerja tersebut juga dilengkapi dengan sejumlah fitur yang berguna untuk blog, seperti tag dan kemampuan untuk mengarahkan berkas konten ke halaman HTML yang telah selesai. Keduanya juga merupakan sumber terbuka, sehingga Anda dapat meminta perubahan dan memberikan kontribusi untuk perbaikan .</p>
+
+<p>Perbedaan pertama dan paling mendasar antara framework Jekyll dan Hugo adalah bahasa yang digunakan untuk menulisnya. Jekyll ditulis dalam Ruby, bahasa skrip populer yang merupakan salah satu bahasa pertama yang hadir dengan framework web beropini, sehingga membuatnya sangat populer untuk membangun situs web dengan cepat. Hugo ditulis dalam Go, yang dikembangkan di Google dengan fokus pada eksekusi bersamaan, mengoptimalkan untuk penerapan di lingkungan cloud tempat daya komputasi didistribusikan ke banyak mesin.</p>
+
+</div>
             </div>
 
             <!-- Bagian Samping di Kanan -->
@@ -294,13 +324,25 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
               <aside class="aside-section">
                 <h3>Recent Posts</h3>
                 <ul class="list-unstyled">
-                  {% for post in site.posts %}
+                  
                   <li>
-                    <a href="{{ post.url }}" class="aside-link"
-                      >{{ post.title }}</a
+                    <a href="/post/hugo-vs-jekyll/" class="aside-link"
+                      >Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?</a
                     >
                   </li>
-                  {% endfor %}
+                  
+                  <li>
+                    <a href="/post/mengenal-python/" class="aside-link"
+                      >Mengenal Python: Bahasa Pemrograman yang Populer</a
+                    >
+                  </li>
+                  
+                  <li>
+                    <a href="/post/mengenal-jekyll/" class="aside-link"
+                      >Mengenal Jekyll: Generator Situs Statis</a
+                    >
+                  </li>
+                  
                 </ul>
               </aside>
             </div>
@@ -343,7 +385,7 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="d-flex align-items-center">
               <img
-                src="{{ site.baseurl }}/assets/logo-himpunan.png"
+                src="/assets/logo-himpunan.png"
                 alt="Logo HMTI"
                 height="80"
               />
@@ -406,10 +448,10 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
     </a>
 
     <!-- Vendor JS Files -->
-    <script src="{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

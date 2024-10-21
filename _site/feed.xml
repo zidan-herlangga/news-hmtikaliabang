@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-21T22:42:19+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HMTI News</title><subtitle></subtitle><entry><title type="html">Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?</title><link href="http://localhost:4000/post/hugo-vs-jekyll/" rel="alternate" type="text/html" title="Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?" /><published>2024-10-14T00:02:01+07:00</published><updated>2024-10-14T00:02:01+07:00</updated><id>http://localhost:4000/post/hugo-vs-jekyll</id><content type="html" xml:base="http://localhost:4000/post/hugo-vs-jekyll/"><![CDATA[<p>Generator situs statis membuat situs HTML, dengan tata letak halaman yang dapat diprediksi dan konten dengan presentasi reguler seperti blog. Ada banyak kerangka kerja yang dapat memanfaatkan bahasa pemrograman dan memungkinkan Anda menggunakan kembali kode dan memproses aset untuk halaman HTML ini, tetapi artikel ini akan membandingkan dua yang paling populer: Hugo dan Jekyll . (Untuk perbandingan situs statis dan situs dinamis, lihat Jekyll vs Wordpress )</p>
+
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&amp;s" alt="Hugo vs Jekyll" width="400" /></p>
+
+<h2 id="mengapa-menggunakan-halaman-html-statis">Mengapa Menggunakan Halaman HTML Statis?</h2>
+<p>Generator situs statis menarik karena menghasilkan situs aman yang memerlukan sedikit perawatan dan lebih cepat disajikan daripada halaman web yang dibuat secara dinamis. Dengan halaman web dinamis, kerangka kerja web yang terpasang di server menghasilkan halaman yang dilihat pengguna. Pengguna membuat permintaan, server meminta informasi dari basis data, menarik informasi yang ingin dilihat pengguna, menggabungkan data tersebut ke dalam halaman HTML, lalu mengirimkan halaman tersebut kepada pengguna.</p>
+
+<p>Dengan halaman HTML statis, halaman tersebut telah dirender terlebih dahulu, sehingga server tidak melakukan pekerjaan apa pun dalam membangun halaman tersebut. Server hanya menangani pengiriman halaman yang sesuai kepada pengguna. Ini berarti bahwa halaman HTML statis lebih cepat, dan persyaratan komputasi untuk server jauh lebih kecil; hal ini penting dalam lingkungan cloud tempat Anda dikenakan biaya untuk daya komputasi.</p>
+
+<p>Halaman statis memangkas pembuatan halaman, sehingga pengguna menerima halaman mereka jauh lebih cepat. Risiko keamanan juga lebih kecil karena lebih sedikit bagian yang dapat disusupi dan dieksploitasi oleh penyerang. Halaman HTML statis mudah di-cache, sehingga sangat cocok untuk disajikan dari jaringan pengiriman konten (CDN), sehingga waktu respons menjadi lebih cepat.</p>
+
+<p>Karena halaman statis tidak memerlukan server untuk melakukan kalkulasi atau memeriksa database, Anda dapat menyebarkannya menggunakan opsi hosting yang sangat sederhana dan berbiaya rendah seperti bucket Amazon S3 atau GitHub Pages.</p>
+
+<h2 id="generator-situs-statis">Generator Situs Statis</h2>
+<p>Anda cukup menulis halaman HTML dan menaruhnya di server, mengingat kembali masa -masa awal web, tetapi generator situs statis memudahkan pembuatan halaman baru yang menggunakan templat yang ada atau memodifikasi semua halaman yang ada sekaligus.</p>
+
+<p>Salah satu generator situs statis pertama yang memulai kembali tren ini dalam pengembangan web adalah Jekyll. Hugo bergabung lima tahun kemudian.</p>
+
+<h2 id="apa-itu-hugo">Apa itu Hugo?</h2>
+<p>Hugo adalah generator situs statis yang sangat cepat dan sangat aman yang memposisikan diri sebagai alat pembuat situs web yang menyenangkan dan modern. Alat ini ditulis dalam bahasa Go dan situs dapat dihosting di mana saja. Salah satu fitur yang paling menonjol adalah situs statis Hugo tidak memerlukan basis data pada runtime seperti Ruby, PHP, atau Python. Menurut situs web mereka, generator situs statis Hugo “adalah alat tercepat di jenisnya” yang mencantumkan kecepatan pembuatan situs rata-rata di bawah satu detik. 
+Informasi selengkapnya tentang <a href="https://gohugo.io/about/what-is-hugo/">Apa itu Hugo</a></p>
+
+<h2 id="apa-itu-jekyll">Apa itu Jekyll?</h2>
+<p>Jekyll adalah generator situs statis sumber terbuka yang ditulis dalam bahasa Ruby oleh salah satu pendiri Github, Tom Preston-Werner. Jekyll menerjemahkan dokumen teks biasa menjadi situs statis yang dapat digunakan untuk situs web atau blog berbasis informasi. Jekyll memiliki dukungan bawaan untuk halaman Github dan merupakan salah satu generator situs statis paling populer yang tersedia. Informasi selengkapnya tentang <a href="https://jekyllrb.com/docs/">Apa itu Jekyll</a></p>
+
+<h2 id="hugo-vs-jekyll">Hugo vs. Jekyll</h2>
+<p>Dengan generator mana pun, Anda dapat membuat blog bertemplat dan menjalankannya dalam waktu kurang dari tiga puluh menit. Jika Anda memulai dari nol, Hugo sedikit lebih mudah diinstal. Dengan Jekyll, Anda harus menginstal beberapa prasyarat seperti Ruby. Go hadir sebagai biner prakompilasi yang dibundel bersama instalasi Hugo.</p>
+
+<p>Untuk framework Jekyll dan Hugo, Anda biasanya menulis file konten seperti posting blog dalam HTML atau Markdown. Konten ini digabungkan dengan template HTML, yang membungkus dan memberi gaya pada konten, menghasilkan file HTML untuk ditampilkan di web.</p>
+
+<p>Kedua kerangka kerja tersebut memungkinkan pengembang untuk menambahkan variabel ke konten, menggunakan bahasa markah YAML, dan menggunakan berkas data dalam format umum seperti JSON dan CSV. Kedua kerangka kerja tersebut juga dilengkapi dengan sejumlah fitur yang berguna untuk blog, seperti tag dan kemampuan untuk mengarahkan berkas konten ke halaman HTML yang telah selesai. Keduanya juga merupakan sumber terbuka, sehingga Anda dapat meminta perubahan dan memberikan kontribusi untuk perbaikan .</p>
+
+<p>Perbedaan pertama dan paling mendasar antara framework Jekyll dan Hugo adalah bahasa yang digunakan untuk menulisnya. Jekyll ditulis dalam Ruby, bahasa skrip populer yang merupakan salah satu bahasa pertama yang hadir dengan framework web beropini, sehingga membuatnya sangat populer untuk membangun situs web dengan cepat. Hugo ditulis dalam Go, yang dikembangkan di Google dengan fokus pada eksekusi bersamaan, mengoptimalkan untuk penerapan di lingkungan cloud tempat daya komputasi didistribusikan ke banyak mesin.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Generator situs statis membuat situs HTML, dengan tata letak halaman yang dapat diprediksi dan konten dengan presentasi reguler seperti blog. Ada banyak kerangka kerja yang dapat memanfaatkan bahasa pemrograman dan memungkinkan Anda menggunakan kembali kode dan memproses aset untuk halaman HTML ini, tetapi artikel ini akan membandingkan dua yang paling populer: Hugo dan Jekyll . (Untuk perbandingan situs statis dan situs dinamis, lihat Jekyll vs Wordpress )]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&amp;s" /><media:content medium="image" url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsvW8wCJH2XFcBpDozzq5JIMafQ9jtwzGA&amp;s" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mengenal Python: Bahasa Pemrograman yang Populer</title><link href="http://localhost:4000/post/mengenal-python/" rel="alternate" type="text/html" title="Mengenal Python: Bahasa Pemrograman yang Populer" /><published>2024-09-21T00:00:00+07:00</published><updated>2024-09-21T00:00:00+07:00</updated><id>http://localhost:4000/post/mengenal-python</id><content type="html" xml:base="http://localhost:4000/post/mengenal-python/"><![CDATA[<p>Python adalah bahasa pemrograman yang sangat populer dan banyak digunakan di berbagai bidang, seperti pengembangan web, data science, pembelajaran mesin, dan banyak lagi. Dengan sintaks yang mudah dipahami, Python sangat cocok untuk pemula maupun pengembang berpengalaman.</p>
+
+<p><img src="https://fastnetmon.com/wp-content/uploads/2016/08/python-logo.png" alt="Python" /></p>
+
+<h2 id="mengapa-memilih-python">Mengapa Memilih Python?</h2>
+
+<ol>
+  <li><strong>Mudah Dipelajari</strong>: Sintaksis Python yang bersih dan sederhana membuatnya mudah dipahami, terutama bagi pemula.</li>
+  <li><strong>Komunitas yang Besar</strong>: Dengan komunitas yang aktif, Anda dapat dengan mudah menemukan bantuan dan sumber daya.</li>
+  <li><strong>Beragam Pustaka</strong>: Python memiliki banyak pustaka dan framework yang mempercepat pengembangan aplikasi.</li>
+</ol>
+
+<h2 id="contoh-kode-python">Contoh Kode Python</h2>
+
+<h3 id="hello-world">Hello World</h3>
+
+<p>Berikut adalah contoh program Python yang sederhana untuk mencetak “Hello, World!”:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Program Hello World
+</span><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, World!</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">tambah</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="c1"># Menggunakan fungsi
+</span><span class="n">hasil</span> <span class="o">=</span> <span class="nf">tambah</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hasil penjumlahan:</span><span class="sh">"</span><span class="p">,</span> <span class="n">hasil</span><span class="p">)</span>  <span class="c1"># Output: Hasil penjumlahan: 8
+</span> <span class="c1"># Contoh penggunaan dictionary
+</span><span class="n">mahasiswa</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">nama</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Ali</span><span class="sh">"</span><span class="p">,</span>
+    <span class="sh">"</span><span class="s">umur</span><span class="sh">"</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+    <span class="sh">"</span><span class="s">jurusan</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Teknik Informatika</span><span class="sh">"</span>
+<span class="p">}</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Nama:</span><span class="sh">"</span><span class="p">,</span> <span class="n">mahasiswa</span><span class="p">[</span><span class="sh">"</span><span class="s">nama</span><span class="sh">"</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Umur:</span><span class="sh">"</span><span class="p">,</span> <span class="n">mahasiswa</span><span class="p">[</span><span class="sh">"</span><span class="s">umur</span><span class="sh">"</span><span class="p">])</span>
+</code></pre></div></div>]]></content><author><name></name></author><category term="python" /><category term="programming" /><summary type="html"><![CDATA[Python adalah bahasa pemrograman yang sangat populer dan banyak digunakan di berbagai bidang, seperti pengembangan web, data science, pembelajaran mesin, dan banyak lagi. Dengan sintaks yang mudah dipahami, Python sangat cocok untuk pemula maupun pengembang berpengalaman.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://fastnetmon.com/wp-content/uploads/2016/08/python-logo.png" /><media:content medium="image" url="https://fastnetmon.com/wp-content/uploads/2016/08/python-logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mengenal Jekyll: Generator Situs Statis</title><link href="http://localhost:4000/post/mengenal-jekyll/" rel="alternate" type="text/html" title="Mengenal Jekyll: Generator Situs Statis" /><published>2024-09-20T00:02:01+07:00</published><updated>2024-09-20T00:02:01+07:00</updated><id>http://localhost:4000/post/mengenal-jekyll</id><content type="html" xml:base="http://localhost:4000/post/mengenal-jekyll/"><![CDATA[<p>Jekyll adalah generator situs statis yang memungkinkan Anda untuk mengubah teks biasa menjadi situs web yang sepenuhnya berfungsi. Jekyll sangat populer di kalangan pengembang web dan penulis blog karena kemudahan penggunaannya dan fleksibilitasnya. Mari kita bahas lebih dalam tentang Jekyll.</p>
+
+<h2 id="apa-itu-jekyll">Apa Itu Jekyll?</h2>
+
+<p>Jekyll adalah alat yang digunakan untuk membangun situs web statis dengan cara yang sederhana dan efisien. Situs yang dihasilkan bersifat statis, artinya konten tidak berubah secara dinamis saat diakses oleh pengguna.</p>
+
+<h3 id="1-keunggulan-jekyll">1. <strong>Keunggulan Jekyll</strong></h3>
+
+<ul>
+  <li><strong>Situs Statis</strong>: Jekyll menghasilkan situs yang cepat dan aman, karena tidak bergantung pada database.</li>
+  <li><strong>Menulis dengan Markdown</strong>: Anda dapat menulis konten menggunakan Markdown, format teks yang mudah dibaca dan ditulis.</li>
+  <li><strong>Penggunaan Liquid</strong>: Jekyll menggunakan Liquid, bahasa templating yang memungkinkan Anda menambahkan logika ke dalam halaman, seperti loop dan kondisi.</li>
+</ul>
+
+<h3 id="2-kemudahan-penggunaan">2. <strong>Kemudahan Penggunaan</strong></h3>
+
+<ul>
+  <li><strong>Pengaturan Minimal</strong>: Jekyll memungkinkan Anda untuk membuat dan mengelola situs tanpa memerlukan server backend yang rumit. Cukup tulis konten Anda dan jalankan perintah untuk membangun situs.</li>
+</ul>
+
+<h3 id="3-integrasi-dengan-github-pages">3. <strong>Integrasi dengan GitHub Pages</strong></h3>
+
+<ul>
+  <li><strong>Hosting Gratis</strong>: Jekyll terintegrasi dengan GitHub Pages, yang memungkinkan Anda menghosting situs secara gratis dengan hanya mendorong repositori ke GitHub.</li>
+</ul>
+
+<h3 id="4-tema-dan-kustomisasi">4. <strong>Tema dan Kustomisasi</strong></h3>
+
+<ul>
+  <li><strong>Beragam Tema</strong>: Jekyll menawarkan banyak tema yang dapat dipilih dan disesuaikan. Anda juga dapat membuat tema kustom sesuai dengan identitas merek Anda.</li>
+</ul>
+
+<h3 id="5-dukungan-untuk-blog">5. <strong>Dukungan untuk Blog</strong></h3>
+
+<ul>
+  <li><strong>Fitur Blog yang Kuat</strong>: Jekyll dirancang dengan blog dalam pikiran, menawarkan fitur seperti pengelolaan pos, kategori, dan tag.</li>
+</ul>
+
+<h3 id="6-ekstensi-dan-plugin">6. <strong>Ekstensi dan Plugin</strong></h3>
+
+<ul>
+  <li><strong>Fungsionalitas Tambahan</strong>: Jekyll mendukung berbagai plugin yang dapat memperluas fungsionalitas situs Anda, meskipun beberapa mungkin tidak didukung di GitHub Pages.</li>
+</ul>
+
+<h2 id="contoh-gambar">Contoh Gambar</h2>
+
+<p>Berikut adalah gambar yang berkaitan dengan Jekyll:</p>
+
+<p><img src="https://happycoding.io/tutorials/html/images/jekyll-6.png" alt="Jekyll Logo" width="400" /></p>
+
+<h2 id="contoh-kode-snippet">Contoh Kode Snippet</h2>
+
+<p>Jekyll juga menawarkan dukungan untuk kode snippet. Berikut adalah contoh kode Ruby:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Jekyll adalah alat yang kuat untuk membuat situs web statis. Dengan pendekatan yang sederhana dan efisien, Jekyll memungkinkan Anda untuk fokus pada pembuatan konten berkualitas tanpa repot dengan pengaturan backend yang rumit. Jika Anda mencari cara yang cepat dan efektif untuk membangun situs web atau blog, Jekyll adalah pilihan yang sangat baik.</p>
+
+<p>Untuk informasi lebih lanjut, Anda dapat mengunjungi <a href="https://jekyllrb.com/docs/home">Jekyll docs</a>, melaporkan masalah di <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>, atau berdiskusi di <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Jekyll adalah generator situs statis yang memungkinkan Anda untuk mengubah teks biasa menjadi situs web yang sepenuhnya berfungsi. Jekyll sangat populer di kalangan pengembang web dan penulis blog karena kemudahan penggunaannya dan fleksibilitasnya. Mari kita bahas lebih dalam tentang Jekyll.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://happycoding.io/tutorials/html/images/jekyll-6.png" /><media:content medium="image" url="https://happycoding.io/tutorials/html/images/jekyll-6.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

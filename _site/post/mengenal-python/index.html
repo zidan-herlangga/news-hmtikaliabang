@@ -1,7 +1,3 @@
----
-layout: post # Ganti layout sesuai dengan yang kamu gunakan
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,8 +7,8 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
     />
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}" />
+    <title>Mengenal Python: Bahasa Pemrograman yang Populer</title>
+    <meta name="description" content="" />
     <meta
       name="keywords"
       content="HMTI DPC Kaliabang, HMTI Kaliabang, DPC Kaliabang, News HMTI DPC Kaliabang"
@@ -46,16 +42,16 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <link
-      href="{{ site.baseurl }}/assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="{{ site.baseurl }}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
 
     <!-- Main CSS File -->
-    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
+    <link href="/assets/css/main.css" rel="stylesheet" />
     <style>
       /*--------------------------------------------------------------
       # Global Footer
@@ -248,7 +244,7 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
           class="logo d-flex align-items-center me-auto"
         >
           <img
-            src="{{ site.baseurl }}/assets/logo-himpunan.png"
+            src="/assets/logo-himpunan.png"
             alt="Logo HMTI"
           />
           <h1 class="sitename">HMTI News</h1>
@@ -282,11 +278,48 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
       <!-- News Section -->
       <section class="content-article">
         <div class="container">
-          <h3>{{ page.title }}</h3>
+          <h3>Mengenal Python: Bahasa Pemrograman yang Populer</h3>
           <div class="row">
             <!-- Konten Berita di Kiri -->
             <div class="col-md-8">
-              <div class="content-news">{{ content | markdownify }}</div>
+              <div class="content-news"><p>Python adalah bahasa pemrograman yang sangat populer dan banyak digunakan di berbagai bidang, seperti pengembangan web, data science, pembelajaran mesin, dan banyak lagi. Dengan sintaks yang mudah dipahami, Python sangat cocok untuk pemula maupun pengembang berpengalaman.</p>
+
+<p><img src="https://fastnetmon.com/wp-content/uploads/2016/08/python-logo.png" alt="Python" /></p>
+
+<h2 id="mengapa-memilih-python">Mengapa Memilih Python?</h2>
+
+<ol>
+  <li><strong>Mudah Dipelajari</strong>: Sintaksis Python yang bersih dan sederhana membuatnya mudah dipahami, terutama bagi pemula.</li>
+  <li><strong>Komunitas yang Besar</strong>: Dengan komunitas yang aktif, Anda dapat dengan mudah menemukan bantuan dan sumber daya.</li>
+  <li><strong>Beragam Pustaka</strong>: Python memiliki banyak pustaka dan framework yang mempercepat pengembangan aplikasi.</li>
+</ol>
+
+<h2 id="contoh-kode-python">Contoh Kode Python</h2>
+
+<h3 id="hello-world">Hello World</h3>
+
+<p>Berikut adalah contoh program Python yang sederhana untuk mencetak “Hello, World!”:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Program Hello World
+</span><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, World!</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">tambah</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="c1"># Menggunakan fungsi
+</span><span class="n">hasil</span> <span class="o">=</span> <span class="nf">tambah</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hasil penjumlahan:</span><span class="sh">"</span><span class="p">,</span> <span class="n">hasil</span><span class="p">)</span>  <span class="c1"># Output: Hasil penjumlahan: 8
+</span> <span class="c1"># Contoh penggunaan dictionary
+</span><span class="n">mahasiswa</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">nama</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Ali</span><span class="sh">"</span><span class="p">,</span>
+    <span class="sh">"</span><span class="s">umur</span><span class="sh">"</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+    <span class="sh">"</span><span class="s">jurusan</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Teknik Informatika</span><span class="sh">"</span>
+<span class="p">}</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Nama:</span><span class="sh">"</span><span class="p">,</span> <span class="n">mahasiswa</span><span class="p">[</span><span class="sh">"</span><span class="s">nama</span><span class="sh">"</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Umur:</span><span class="sh">"</span><span class="p">,</span> <span class="n">mahasiswa</span><span class="p">[</span><span class="sh">"</span><span class="s">umur</span><span class="sh">"</span><span class="p">])</span>
+</code></pre></div></div>
+</div>
             </div>
 
             <!-- Bagian Samping di Kanan -->
@@ -294,13 +327,25 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
               <aside class="aside-section">
                 <h3>Recent Posts</h3>
                 <ul class="list-unstyled">
-                  {% for post in site.posts %}
+                  
                   <li>
-                    <a href="{{ post.url }}" class="aside-link"
-                      >{{ post.title }}</a
+                    <a href="/post/hugo-vs-jekyll/" class="aside-link"
+                      >Hugo vs. Jekyll: Mana yang Tepat untuk Blog Anda?</a
                     >
                   </li>
-                  {% endfor %}
+                  
+                  <li>
+                    <a href="/post/mengenal-python/" class="aside-link"
+                      >Mengenal Python: Bahasa Pemrograman yang Populer</a
+                    >
+                  </li>
+                  
+                  <li>
+                    <a href="/post/mengenal-jekyll/" class="aside-link"
+                      >Mengenal Jekyll: Generator Situs Statis</a
+                    >
+                  </li>
+                  
                 </ul>
               </aside>
             </div>
@@ -343,7 +388,7 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="d-flex align-items-center">
               <img
-                src="{{ site.baseurl }}/assets/logo-himpunan.png"
+                src="/assets/logo-himpunan.png"
                 alt="Logo HMTI"
                 height="80"
               />
@@ -406,10 +451,10 @@ layout: post # Ganti layout sesuai dengan yang kamu gunakan
     </a>
 
     <!-- Vendor JS Files -->
-    <script src="{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
